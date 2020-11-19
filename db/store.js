@@ -1,1 +1,0 @@
-// Function writing, editing, delteing
