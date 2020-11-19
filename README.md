@@ -22,9 +22,7 @@ Below are some example images of the deployed app!
 
 ## App
 
-Below is a link to the depoyed app on Heroku:
-
-[Note Taker App](https://handy-note-taker.herokuapp.com/)
+Here is a link to the deployed app on Heroku: [Note Taker App](https://handy-note-taker.herokuapp.com/)
 
 ## Questions?
 

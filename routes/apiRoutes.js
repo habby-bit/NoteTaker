@@ -1,4 +1,5 @@
 const fs = require('fs');
+
 var noteData = fs.readFileSync("./db/db.json", "utf8");
 var notes = JSON.parse(noteData)
 
@@ -8,7 +9,7 @@ module.exports = function (app) {
     app.get("/api/notes", function (req, res) {
         res.json(notes);
     });
-    
+
     app.get("/api/notes/:id", function (req, res) {
         res.json(notes[Number(req.params.id)]);
     });
@@ -17,6 +18,7 @@ module.exports = function (app) {
     app.post("/api/notes", function (req, res) {
         var newNote = req.body;
         var noteId = (notes.length).toString();
+        
         newNote.id = noteId;
         notes.push(newNotes);
 
@@ -44,4 +46,4 @@ module.exports = function (app) {
         fs.writeFileSync('./db/db.json', JSON.stringify(notes));
         res.json(notes);
     });
-}
+};
