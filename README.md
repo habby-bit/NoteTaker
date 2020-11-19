@@ -1,6 +1,4 @@
-# NoteTaker
-
-# TEAM SUMMARY
+# NOTE TAKER
 
 ## Description
 
