@@ -20,7 +20,7 @@ module.exports = function (app) {
         var noteId = (notes.length).toString();
         
         newNote.id = noteId;
-        notes.push(newNotes);
+        notes.push(newNote);
 
         fs.writeFileSync("./db/db.json", JSON.stringify(notes), function (err) {
             if (err) throw (err);
